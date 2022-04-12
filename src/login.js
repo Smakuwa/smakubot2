@@ -5,8 +5,9 @@
 */
 
 const botcore = require("messenger-botcore");
+const credentials = require("credentials.js");
 
-botcore.login.login(process.env, (err, api) => {
+botcore.login.login(credentials, (err, api) => {
     if (err) {
         console.error(err);
     } else {
